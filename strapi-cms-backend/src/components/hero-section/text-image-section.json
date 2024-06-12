@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_hero_section_text_image_sections",
+  "info": {
+    "displayName": "TextImageSection",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "HeroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "HeroDescription": {
+      "type": "text",
+      "required": true
+    },
+    "HeroImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

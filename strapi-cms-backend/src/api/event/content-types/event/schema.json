@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MetaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "MetaDescription": {
+      "type": "string",
+      "required": true
+    },
+    "MetaCanonical": {
+      "type": "string",
+      "required": true
+    },
+    "MetaKeywords": {
+      "type": "text",
+      "required": true
+    },
+    "IntroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "IntroText": {
+      "type": "text",
+      "required": true
+    },
+    "IntroBanner": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "TextImage": {
+      "type": "dynamiczone",
+      "components": [
+        "hero-section.text-image-section"
+      ],
+      "required": true,
+      "max": 2,
+      "min": 1
+    },
+    "CtaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "CtaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "CtaImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "IntroTitle",
+      "required": true
+    },
+    "Faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.faqs",
+      "max": 2
+    },
+    "NavMenuName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
